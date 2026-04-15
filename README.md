@@ -12,7 +12,7 @@
 
 ---
 
-## The short version
+## A Short Version About Me
 
 I'm an **AI / GenAI Developer at CGI** (Bengaluru). I work on the parts of LLM systems that most demos skip — how do you know if your RAG pipeline is actually retrieving the right things? How do you catch hallucinations before they hit production? How do you turn a fragile, hardcoded LLM chain into something that reasons through novel inputs?
 
