@@ -1,94 +1,161 @@
 <div align="center">
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Narendranath+Athota+%F0%9F%91%8B;AI+%2F+GenAI+Developer+%40+CGI;I+build+things+that+think.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Narendranath+Athota;I+build+AI+systems+that+actually+work.;RAG+%7C+Agentic+AI+%7C+LLM+Evaluation)](https://git.io/typing-svg)
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/narendranath-athota-3499a5259)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:athotanarendranath@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/narendranath0077)
 
 </div>
 
 ---
 
-### Who I Am
+## The short version
 
-I'm an **AI / GenAI Developer at CGI, Bengaluru** — I work on the messy, interesting parts of LLM systems: evaluation pipelines that actually measure something, retrieval that doesn't hallucinate half the corpus, and agentic workflows that don't fall apart on edge cases.
+I'm an **AI / GenAI Developer at CGI** (Bengaluru). I work on the parts of LLM systems that most demos skip — how do you know if your RAG pipeline is actually retrieving the right things? How do you catch hallucinations before they hit production? How do you turn a fragile, hardcoded LLM chain into something that reasons through novel inputs?
 
-Before this, I was a CS (AI) student who got deep into deep learning, then got obsessed with why RAG systems fail, then started building tools to fix that. That thread is basically my whole career so far.
-
----
-
-### What I'm Working On
-
-At **CGI**, I'm embedded in an enterprise AI team building internal LLM tooling. Day-to-day, that means:
-
-- Automating LLM output evaluation with **LangChain + RAGAS** — cut manual review cycles by ~40%
-- Replacing dense-only vector search with **hybrid FAISS + BM25** pipelines (context precision up ~40%)
-- Migrating static pipelines into **ReAct-style agentic workflows** with tool-calling
-- Generating synthetic **Q&A datasets** using LLaMA 3 via Ollama to cover edge cases nobody thought to test for
+That's my day job. And also my side projects. And also kind of what I think about too much.
 
 ---
 
-### Projects
+## What I've shipped
 
-**[Universal RAG-Based Chatbot](https://github.com/narendranath0077/Universal-RAG-based-chatbot)**
-A full agentic QA system — not just "ingest + retrieve." It handles multi-format ingestion (PDF, DOCX, CSV, ZIP, directories), does chunked embedding into FAISS, then reranks with BM25 + CrossEncoder before answering. FastAPI backend, Streamlit frontend, fully local via Ollama. Built because most RAG demos skip the hard parts.
-`Python` `LangChain` `LangGraph` `FAISS` `BM25` `FastAPI` `Streamlit` `Ollama`
+### @ CGI (Sep 2025 → Present)
 
----
+**Problem:** The team was spending hours manually reviewing LLM outputs across 100+ internal enterprise documents. No scale, no consistency.
 
-**[Multi-Agent Diet Planning System](https://github.com/narendranath0077)**
-Four specialised agents — constraint analyser, meal generator, validator, feedback handler — that coordinate via Pydantic-validated JSON to produce personalised nutrition plans from real health metrics (BMI, BMR, TDEE). SQLite-backed feedback loop adapts recommendations based on user history. Every output is schema-validated against macros, allergens, and cost constraints.
-`Python` `LangChain` `SQLite` `Pydantic`
+**What I built:** An automated evaluation pipeline using LangChain + RAGAS that scores responses on faithfulness, answer relevance, and context precision. Result → ~40% reduction in manual review cycles, measured by ticket count before/after.
 
 ---
 
-**[Real-Time Oil Spill Detection](https://github.com/narendranath0077/Real-Time-Oil-Spill-Detection-Using-AIS-Satellite-Imagery)**
-Semantic segmentation on **Sentinel-1 SAR imagery + AIS vessel data** using UNet, DeepLabV3+, and a hybrid model that hit **>92% IoU**. Real-time capable. Built during my final year — this is what got me into production-scale ML pipelines.
+**Problem:** Dense-only vector search was retrieving semantically similar but contextually off-target chunks for domain-specific queries.
+
+**What I built:** Hybrid FAISS + BM25 retrieval to balance semantic similarity with keyword precision. RAGAS context-precision went up ~40% against the original baseline.
+
+---
+
+**Problem:** Static LangChain pipelines broke on edge cases because every flow was hardcoded.
+
+**What I built:** Migrated them to ReAct-style agentic workflows with dynamic tool-calling — the system now reasons through what to do rather than following a script.
+
+---
+
+**On the side:** Generated 1,000+ synthetic Q&A pairs using LLaMA 3 via Ollama to build evaluation datasets that stress-test the pipeline on edge cases, not just the queries everyone already handles.
+
+---
+
+## Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔍 Universal RAG Chatbot
+**The premise:** Most RAG demos ingest 5 PDFs and call it done. This one handles zip archives, mixed file types (PDF, DOCX, CSV, JSON, XLSX), and full directories — then actually reranks before answering.
+
+**What's different:** BM25 + CrossEncoder reranking layered on FAISS dense retrieval. Falls back gracefully if the CrossEncoder can't load offline. Async FastAPI backend, Streamlit UI with a glass-smoke aesthetic.
+
+`LangChain` `LangGraph` `FAISS` `BM25` `FastAPI` `Ollama` `Streamlit`
+
+[→ View Repo](https://github.com/narendranath0077/Universal-RAG-based-chatbot)
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 Multi-Agent Diet Planner
+**The premise:** Four specialised agents — constraint analyser, meal generator, validator, feedback handler — coordinate via Pydantic-validated JSON to build personalised nutrition plans from real health metrics (BMI, BMR, TDEE).
+
+**What's different:** It doesn't just generate a plan once. A SQLite feedback loop tracks adherence and adapts future recommendations. Every output is schema-validated against macros, allergens, and cost constraints. Agentic in the actual sense.
+
+`LangChain` `SQLite` `Pydantic` `Python`
+
+[→ View Repo](https://github.com/narendranath0077)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛰️ Real-Time Oil Spill Detection
+**The premise:** Detect oil spills from Sentinel-1 SAR satellite imagery fused with AIS vessel tracking data — in real time.
+
+**What's different:** Not just one model — UNet, DeepLabV3+, and a hybrid model that hit **>92% IoU**. Built in my final year of B.Tech as a genuine attempt at a real-world environmental monitoring problem.
+
 `PyTorch` `UNet` `DeepLabV3+` `SAR Imagery` `AIS Data`
 
+[→ View Repo](https://github.com/narendranath0077/Real-Time-Oil-Spill-Detection-Using-AIS-Satellite-Imagery)
+
+</td>
+<td width="50%" valign="top">
+
+### 🎙️ Python Voice Assistant *(where it all started)*
+**The premise:** Voice-controlled assistant using SpeechRecognition + Pyttsx3 — open websites, tell jokes, give the time.
+
+**Why it's here:** Before FAISS and RAGAS, there was this. Built just to see if I could make something that responds to me. The instinct to build things that interact intelligently with people never left — it just leveled up.
+
+`Python` `SpeechRecognition` `Pyttsx3`
+
+[→ View Repo](https://github.com/narendranath0077/PyCharmMiscProject)
+
+</td>
+</tr>
+</table>
+
 ---
 
-### Stack
+## Tech I actually use
 
+```python
+core_stack = {
+    "LLM Orchestration" : ["LangChain", "LangGraph", "LlamaIndex", "LangSmith"],
+    "Retrieval"         : ["FAISS", "BM25", "ChromaDB", "Pinecone", "CrossEncoder"],
+    "Evaluation"        : ["RAGAS", "Pydantic", "Synthetic Data Generation"],
+    "Model APIs"        : ["OpenAI", "Gemini", "Ollama / LLaMA 3", "HuggingFace"],
+    "Serving"           : ["FastAPI (async)", "Streamlit", "REST APIs"],
+    "ML / DL"           : ["PyTorch", "TensorFlow", "Transformers", "CNNs"],
+    "Cloud & Infra"     : ["AWS EC2/S3", "GCP / Vertex AI", "Docker", "GitHub Actions"],
+}
 ```
-LLMs & Orchestration   LangChain · LangGraph · LlamaIndex · LangSmith
-Retrieval              FAISS · BM25 · ChromaDB · Pinecone · HuggingFace Embeddings
-Evaluation             RAGAS · Pydantic · Synthetic Data Generation
-APIs & Serving         FastAPI (async) · Streamlit · REST APIs
-Models                 OpenAI API · Gemini API · Ollama (LLaMA 3) · HuggingFace
-ML / DL                PyTorch · TensorFlow · CNNs · Transformers
-Cloud & DevOps         AWS (EC2, S3) · GCP / Vertex AI · Docker · GitHub Actions
-```
 
 ---
 
-### Certifications
+## Certifications
 
-- **Oracle Cloud Infrastructure 2025 Generative AI Professional** — Oracle University (1Z0-1127-25)
-- **Claude Code in Action** — Anthropic (Feb 2026)
+| Certification | Issuer | Year |
+|---|---|---|
+| Oracle Cloud Infrastructure 2025 Generative AI Professional (1Z0-1127-25) | Oracle University | 2025 |
+| Claude Code in Action | Anthropic | Feb 2026 |
 
 ---
 
-### GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
-![Narendranath's GitHub Stats](https://github-readme-stats.vercel.app/api?username=narendranath0077&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Narendranath's GitHub Stats](https://github-readme-stats.vercel.app/api?username=narendranath0077&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=narendranath0077&layout=compact&theme=tokyonight&hide_border=true)
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=narendranath0077&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=narendranath0077&layout=compact&theme=tokyonight&hide_border=true&langs_count=6)
 
 </div>
 
 ---
 
-### Reach Me
+## Currently thinking about
 
-**Email:** athotanarendranath@gmail.com  
-**LinkedIn:** [narendranath-athota-3499a5259](https://linkedin.com/in/narendranath-athota-3499a5259)  
-**Location:** Bengaluru, India
+- Why most production RAG systems are still fundamentally brittle — and what it actually takes to fix that
+- The gap between "agentic" as a marketing word and agentic systems that work under adversarial inputs
+- MCP (Model Context Protocol) and what it means for the future of tool-calling architectures
 
 ---
 
 <div align="center">
-<sub>I'm most reachable on LinkedIn. If you're working on something with LLMs, RAG, or agentic systems — genuinely happy to talk.</sub>
+
+**If you're working on LLM systems, RAG, or evaluation — let's talk.**
+
+[![Connect on LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/narendranath-athota-3499a5259)
+
+<sub>Bengaluru, India · Open to interesting problems · athotanarendranath@gmail.com</sub>
+
 </div>
