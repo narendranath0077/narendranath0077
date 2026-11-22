@@ -4,8 +4,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=5EEAD4&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=0F766E&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1800&color=5EEAD4&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1800&color=0F766E&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
   </picture>
 </p>
 
@@ -17,10 +17,10 @@
 <br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/role-Associate_Software_Engineer_at_CGI-0f766e?style=for-the-badge&labelColor=24292f" alt="role: Associate Software Engineer at CGI"/><br/>
-  <img src="https://img.shields.io/badge/focus-Agentic_AI_%C2%B7_Enterprise_RAG_%C2%B7_Evaluation_%C2%B7_Python_backends-0f766e?style=for-the-badge&labelColor=24292f" alt="focus: Agentic AI · Enterprise RAG · Evaluation · Python backends"/><br/>
-  <img src="https://img.shields.io/badge/building-Vantage%2C_an_agentic_analytics_platform-0f766e?style=for-the-badge&labelColor=24292f" alt="building: Vantage, an agentic analytics platform"/><br/>
-  <img src="https://img.shields.io/badge/exploring-MCP_and_agent_reliability_under_adversarial_input-0f766e?style=for-the-badge&labelColor=24292f" alt="exploring: MCP and agent reliability under adversarial input"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&color=5EEAD4&center=true&vCenter=true&duration=2200&pause=350&multiline=true&repeat=false&width=760&height=210&lines=role%3A+Associate+Software+Engineer+at+CGI;focus%3A+agentic+AI%2C+enterprise+RAG%2C+evaluation;building%3A+Vantage%2C+an+agentic+analytics+platform;exploring%3A+MCP+and+agent+reliability">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&color=0F766E&center=true&vCenter=true&duration=2200&pause=350&multiline=true&repeat=false&width=760&height=210&lines=role%3A+Associate+Software+Engineer+at+CGI;focus%3A+agentic+AI%2C+enterprise+RAG%2C+evaluation;building%3A+Vantage%2C+an+agentic+analytics+platform;exploring%3A+MCP+and+agent+reliability" alt="Role: Associate Software Engineer at CGI. Focus: agentic AI, enterprise RAG, evaluation. Building: Vantage, an agentic analytics platform. Exploring: MCP and agent reliability."/>
+  </picture>
 </p>
 
 <p align="center">
