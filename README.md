@@ -3,7 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=2DD4BF&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=5EEAD4&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=0F766E&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
+  </picture>
 </p>
 
 <p align="center">
@@ -13,15 +16,12 @@
 
 <br/>
 
-```text
-narendranath@cgi:~$ cat now.txt
-
-role        Associate Software Engineer, CGI
-focus       agentic AI, enterprise RAG, evaluation, Python backends
-building    Vantage, an agentic analytics platform with grounded answers
-reading     MCP, and how agents behave under adversarial input
-reach me    athotanarendranath@gmail.com
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/role-Associate_Software_Engineer_at_CGI-0f766e?style=for-the-badge&labelColor=24292f" alt="role: Associate Software Engineer at CGI"/><br/>
+  <img src="https://img.shields.io/badge/focus-Agentic_AI_%C2%B7_Enterprise_RAG_%C2%B7_Evaluation_%C2%B7_Python_backends-0f766e?style=for-the-badge&labelColor=24292f" alt="focus: Agentic AI · Enterprise RAG · Evaluation · Python backends"/><br/>
+  <img src="https://img.shields.io/badge/building-Vantage%2C_an_agentic_analytics_platform-0f766e?style=for-the-badge&labelColor=24292f" alt="building: Vantage, an agentic analytics platform"/><br/>
+  <img src="https://img.shields.io/badge/exploring-MCP_and_agent_reliability_under_adversarial_input-0f766e?style=for-the-badge&labelColor=24292f" alt="exploring: MCP and agent reliability under adversarial input"/>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/retrieval_quality-40%25_over_baseline-0f766e?style=for-the-badge&labelColor=24292f" alt="40% retrieval quality improvement over baseline"/>
@@ -36,9 +36,25 @@ reach me    athotanarendranath@gmail.com
 
 ## How I work
 
-- **Measure before claiming.** Answer quality is scored with RAGAS (faithfulness, answer relevancy, context precision) against a baseline, so an improvement is a number and not an impression.
-- **Treat failure as a normal path.** Agents evaluate their own retrieved context and retry, rather than answering confidently on weak evidence.
-- **Validate at every boundary.** Pydantic schemas, whitelisted parameterised queries, and grounded responses with provenance, so a model is never trusted with more than it should be.
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Measure before claiming</h3>
+      <p>Answer quality is scored with RAGAS (faithfulness, answer relevancy, context precision) against a baseline, so an improvement is a number and not an impression.</p>
+      <p><img src="https://img.shields.io/badge/scored_on-100%2B_enterprise_documents-0f766e?style=flat-square&labelColor=24292f" alt="scored on: 100+ enterprise documents"/></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Treat failure as a normal path</h3>
+      <p>Agents evaluate their own retrieved context and retry, rather than answering confidently on weak evidence.</p>
+      <p><img src="https://img.shields.io/badge/ReAct_agents-self--evaluation_and_retry-0f766e?style=flat-square&labelColor=24292f" alt="ReAct agents: self-evaluation and retry"/></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Validate every boundary</h3>
+      <p>Pydantic schemas, whitelisted parameterised queries, and grounded responses with provenance, so a model is never trusted with more than it should be.</p>
+      <p><img src="https://img.shields.io/badge/Vantage-200%2B_automated_tests-0f766e?style=flat-square&labelColor=24292f" alt="Vantage: 200+ automated tests"/></p>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -46,37 +62,93 @@ reach me    athotanarendranath@gmail.com
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="30%" valign="top">
       <h3>Vantage</h3>
-      <sub>Agentic data analytics platform &nbsp;·&nbsp; Sep 2026</sub>
-      <p>A LangGraph agent with tool calling that builds dashboards, answers natural-language questions about data, and generates insights. Runs on Ollama, Anthropic, or OpenAI models.</p>
-      <p>The FastAPI backend is governed: semantic validation, whitelisted parameterised query execution, response grounding, and data provenance. Backed by 200+ automated tests and GitHub Actions CI.</p>
-      <code>LangGraph</code> <code>FastAPI</code> <code>DuckDB</code> <code>Pydantic</code> <code>React</code><br/><br/>
-      <a href="https://github.com/narendranath0077/dataviz"><b>Repository →</b></a>
+      <sub>Agentic data analytics platform<br/>Personal project · Sep 2026</sub>
+      <p><img src="https://img.shields.io/badge/tests-200%2B-0f766e?style=flat-square&labelColor=24292f" alt="tests: 200+"/></p>
+      <p><a href="https://github.com/narendranath0077/dataviz"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View Vantage repository"/></a></p>
     </td>
-    <td width="50%" valign="top">
-      <h3>Agentic RAG System</h3>
-      <sub>Universal RAG chatbot &nbsp;·&nbsp; Jan 2026</sub>
-      <p>A multi-step LangGraph pipeline: query rewriting, intent understanding, scope validation, dynamic retrieval planning, content evaluation, and retry. Ingests zips, directories, and mixed formats (PDF, DOCX, CSV, JSON, XLSX).</p>
-      <p>Post-retrieval uses Reciprocal Rank Fusion, deduplication, and mode-based answer generation to return grounded responses.</p>
-      <code>LangGraph</code> <code>FAISS</code> <code>BM25</code> <code>RAGAS</code> <code>FastAPI</code><br/><br/>
-      <a href="https://github.com/narendranath0077/Universal-RAG-based-chatbot"><b>Repository →</b></a>
+    <td valign="top">
+      <ul>
+        <li>A LangGraph agent with tool calling that builds dashboards, answers natural-language questions about data, and generates insights.</li>
+        <li>Runs on Ollama, Anthropic, or OpenAI models.</li>
+        <li>Governed FastAPI backend: semantic validation, whitelisted parameterised query execution, response grounding, and data provenance.</li>
+        <li>200+ automated tests with GitHub Actions CI.</li>
+      </ul>
+      <p>
+      <img src="https://img.shields.io/badge/LangGraph-1c3c3c?style=flat-square&labelColor=24292f" alt="LangGraph"/>
+      <img src="https://img.shields.io/badge/LangChain-1c3c3c?style=flat-square&labelColor=24292f&logo=langchain&logoColor=white" alt="LangChain"/>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&labelColor=24292f&logo=fastapi&logoColor=white" alt="FastAPI"/>
+      <img src="https://img.shields.io/badge/Pydantic-e92063?style=flat-square&labelColor=24292f&logo=pydantic&logoColor=white" alt="Pydantic"/>
+      <img src="https://img.shields.io/badge/DuckDB-fff000?style=flat-square&labelColor=24292f&logo=duckdb&logoColor=black" alt="DuckDB"/>
+      <img src="https://img.shields.io/badge/SQLite-003b57?style=flat-square&labelColor=24292f&logo=sqlite&logoColor=white" alt="SQLite"/>
+      <img src="https://img.shields.io/badge/React-20232a?style=flat-square&labelColor=24292f&logo=react&logoColor=61dafb" alt="React"/>
+      </p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3>Multi-Agent Diet Planner</h3>
-      <sub>Four coordinating agents with a feedback loop</sub>
-      <p>A constraint analyser, meal generator, validator, and feedback handler exchange Pydantic-validated JSON to build plans from BMI, BMR, and TDEE. A SQLite loop tracks adherence and adapts later plans, and every output is schema-checked against macros, allergens, and cost.</p>
-      <code>LangChain</code> <code>Pydantic</code> <code>SQLite</code><br/><br/>
-      <a href="https://github.com/narendranath0077/Multi-Agent-AI-Diet-Planning-System-"><b>Repository →</b></a>
+    <td width="30%" valign="top">
+      <h3>Agentic RAG System</h3>
+      <sub>Universal RAG chatbot<br/>Jan 2026</sub>
+      <p><img src="https://img.shields.io/badge/retrieval-BM25_%2B_FAISS-0f766e?style=flat-square&labelColor=24292f" alt="retrieval: BM25 + FAISS"/></p>
+      <p><a href="https://github.com/narendranath0077/Universal-RAG-based-chatbot"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View Agentic RAG System repository"/></a></p>
     </td>
-    <td width="50%" valign="top">
+    <td valign="top">
+      <ul>
+        <li>Multi-step LangGraph agent: query rewriting, intent understanding, scope validation, dynamic retrieval planning, content evaluation, and retry.</li>
+        <li>Ingests zip archives, directories, and mixed formats (PDF, DOCX, CSV, JSON, XLSX).</li>
+        <li>Post-retrieval processing with Reciprocal Rank Fusion, deduplication, and mode-based answer generation for grounded responses.</li>
+      </ul>
+      <p>
+      <img src="https://img.shields.io/badge/LangGraph-1c3c3c?style=flat-square&labelColor=24292f" alt="LangGraph"/>
+      <img src="https://img.shields.io/badge/LangChain-1c3c3c?style=flat-square&labelColor=24292f&logo=langchain&logoColor=white" alt="LangChain"/>
+      <img src="https://img.shields.io/badge/FAISS-0467df?style=flat-square&labelColor=24292f" alt="FAISS"/>
+      <img src="https://img.shields.io/badge/BM25-334155?style=flat-square&labelColor=24292f" alt="BM25"/>
+      <img src="https://img.shields.io/badge/Hugging_Face-ffd21e?style=flat-square&labelColor=24292f&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&labelColor=24292f&logo=fastapi&logoColor=white" alt="FastAPI"/>
+      <img src="https://img.shields.io/badge/RAGAS-0f766e?style=flat-square&labelColor=24292f" alt="RAGAS"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="30%" valign="top">
+      <h3>Multi-Agent Diet Planner</h3>
+      <sub>Coordinating agents with a feedback loop</sub>
+      <p><img src="https://img.shields.io/badge/agents-4-0f766e?style=flat-square&labelColor=24292f" alt="agents: 4"/></p>
+      <p><a href="https://github.com/narendranath0077/Multi-Agent-AI-Diet-Planning-System-"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View Multi-Agent Diet Planner repository"/></a></p>
+    </td>
+    <td valign="top">
+      <ul>
+        <li>A constraint analyser, meal generator, validator, and feedback handler exchange Pydantic-validated JSON.</li>
+        <li>Builds personalised plans from BMI, BMR, and TDEE.</li>
+        <li>A SQLite feedback loop tracks adherence and adapts later plans; every output is schema-checked against macros, allergens, and cost.</li>
+      </ul>
+      <p>
+      <img src="https://img.shields.io/badge/LangChain-1c3c3c?style=flat-square&labelColor=24292f&logo=langchain&logoColor=white" alt="LangChain"/>
+      <img src="https://img.shields.io/badge/Pydantic-e92063?style=flat-square&labelColor=24292f&logo=pydantic&logoColor=white" alt="Pydantic"/>
+      <img src="https://img.shields.io/badge/SQLite-003b57?style=flat-square&labelColor=24292f&logo=sqlite&logoColor=white" alt="SQLite"/>
+      <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&labelColor=24292f&logo=python&logoColor=white" alt="Python"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="30%" valign="top">
       <h3>Oil Spill Detection</h3>
-      <sub>Sentinel-1 SAR + AIS vessel data &nbsp;·&nbsp; B.Tech final-year project</sub>
-      <p>Semantic segmentation of oil spills from satellite radar imagery fused with vessel-tracking data, designed to be real-time capable. UNet, DeepLabV3+, and a hybrid model were compared, and the hybrid reached over 92% IoU.</p>
-      <code>PyTorch</code> <code>UNet</code> <code>DeepLabV3+</code> <code>SAR</code><br/><br/>
-      <a href="https://github.com/narendranath0077/Real-Time-Oil-Spill-Detection-Using-AIS-Satellite-Imagery"><b>Repository →</b></a>
+      <sub>Sentinel-1 SAR + AIS vessel data<br/>B.Tech final-year project</sub>
+      <p><img src="https://img.shields.io/badge/IoU-%3E92%25-0f766e?style=flat-square&labelColor=24292f" alt="IoU: >92%"/></p>
+      <p><a href="https://github.com/narendranath0077/Real-Time-Oil-Spill-Detection-Using-AIS-Satellite-Imagery"><img src="https://img.shields.io/badge/View_repository-24292f?style=flat-square&logo=github&logoColor=white" alt="View Oil Spill Detection repository"/></a></p>
+    </td>
+    <td valign="top">
+      <ul>
+        <li>Semantic segmentation of oil spills from satellite radar imagery fused with vessel-tracking data, designed to be real-time capable.</li>
+        <li>Compared UNet, DeepLabV3+, and a hybrid model; the hybrid reached over 92% IoU.</li>
+      </ul>
+      <p>
+      <img src="https://img.shields.io/badge/PyTorch-ee4c2c?style=flat-square&labelColor=24292f&logo=pytorch&logoColor=white" alt="PyTorch"/>
+      <img src="https://img.shields.io/badge/UNet-334155?style=flat-square&labelColor=24292f" alt="UNet"/>
+      <img src="https://img.shields.io/badge/DeepLabV3%2B-334155?style=flat-square&labelColor=24292f" alt="DeepLabV3+"/>
+      <img src="https://img.shields.io/badge/SAR_imagery-334155?style=flat-square&labelColor=24292f" alt="SAR imagery"/>
+      </p>
     </td>
   </tr>
 </table>
