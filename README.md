@@ -1,18 +1,14 @@
-<h1 align="center">Narendranath Athota</h1>
-
 <p align="center">
-  <b>AI Engineer</b> &nbsp;·&nbsp; Agentic AI &nbsp;·&nbsp; Enterprise RAG &nbsp;·&nbsp; LLM Evaluation<br/>
-  Associate Software Engineer at CGI, Bengaluru
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0f4f4a,100:0d1117&height=230&section=header&text=Narendranath%20Athota&fontSize=56&fontColor=f0f6fc&fontAlignY=38&animation=fadeIn&desc=AI%20Engineer%20%C2%B7%20Agentic%20AI%20%C2%B7%20RAG%20%C2%B7%20LLM%20Evaluation&descSize=18&descAlignY=60&descColor=5eead4" alt="Narendranath Athota, AI Engineer" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3500&pause=1200&color=0F766E&center=true&vCenter=true&width=760&height=36&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1100&color=2DD4BF&center=true&vCenter=true&width=780&height=38&lines=Agentic+RAG+that+retries+instead+of+guessing;Hybrid+retrieval%3A+BM25+%2B+FAISS+%2B+rerank;Quality+measured+with+RAGAS%2C+not+assumed;FastAPI+backends+with+200%2B+automated+tests;Tree-sitter+code+context%2C+about+40%25+fewer+tokens" alt="Agentic RAG that retries instead of guessing. Hybrid retrieval. Quality measured with RAGAS."/>
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/narendranath-athota-3499a5259"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:athotanarendranath@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://github.com/narendranath0077?tab=repositories"><img src="https://img.shields.io/badge/Repositories-24292f?style=flat-square&logo=github&logoColor=white" alt="Repositories"/></a>
+  <a href="https://linkedin.com/in/narendranath-athota-3499a5259"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:athotanarendranath@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
 <br/>
@@ -20,7 +16,7 @@
 ```text
 narendranath@cgi:~$ cat now.txt
 
-role        Associate Software Engineer, CGI (Bengaluru)
+role        Associate Software Engineer, CGI
 focus       agentic AI, enterprise RAG, evaluation, Python backends
 building    Vantage, an agentic analytics platform with grounded answers
 reading     MCP, and how agents behave under adversarial input
@@ -87,352 +83,9 @@ reach me    athotanarendranath@gmail.com
 
 <br/>
 
-## Retrieval, up close
+## How the Agentic RAG pipeline works
 
-Hybrid retrieval starts wide and narrows. The model below is interactive: drag to rotate, scroll to zoom. From the bottom plate up, it shows the candidate pool from BM25 and FAISS, the pool after fusion and deduplication, the reranked shortlist, and the final context the model is allowed to see.
-
-```stl
-solid retrieval_funnel
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -5.00 -5.00 0.00
-      vertex -5.00 5.00 0.00
-      vertex 5.00 5.00 0.00
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -5.00 -5.00 0.00
-      vertex 5.00 5.00 0.00
-      vertex 5.00 -5.00 0.00
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -5.00 -5.00 0.60
-      vertex 5.00 -5.00 0.60
-      vertex 5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -5.00 -5.00 0.60
-      vertex 5.00 5.00 0.60
-      vertex -5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -5.00 -5.00 0.00
-      vertex 5.00 -5.00 0.00
-      vertex 5.00 -5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -5.00 -5.00 0.00
-      vertex 5.00 -5.00 0.60
-      vertex -5.00 -5.00 0.60
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 5.00 -5.00 0.00
-      vertex 5.00 5.00 0.00
-      vertex 5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 5.00 -5.00 0.00
-      vertex 5.00 5.00 0.60
-      vertex 5.00 -5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 1.0 0.0
-    outer loop
-      vertex 5.00 5.00 0.00
-      vertex -5.00 5.00 0.00
-      vertex -5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 1.0 -0.0
-    outer loop
-      vertex 5.00 5.00 0.00
-      vertex -5.00 5.00 0.60
-      vertex 5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -5.00 5.00 0.00
-      vertex -5.00 -5.00 0.00
-      vertex -5.00 -5.00 0.60
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -5.00 5.00 0.00
-      vertex -5.00 -5.00 0.60
-      vertex -5.00 5.00 0.60
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -3.70 -3.70 1.50
-      vertex -3.70 3.70 1.50
-      vertex 3.70 3.70 1.50
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -3.70 -3.70 1.50
-      vertex 3.70 3.70 1.50
-      vertex 3.70 -3.70 1.50
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -3.70 -3.70 2.10
-      vertex 3.70 -3.70 2.10
-      vertex 3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -3.70 -3.70 2.10
-      vertex 3.70 3.70 2.10
-      vertex -3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -3.70 -3.70 1.50
-      vertex 3.70 -3.70 1.50
-      vertex 3.70 -3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -3.70 -3.70 1.50
-      vertex 3.70 -3.70 2.10
-      vertex -3.70 -3.70 2.10
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 3.70 -3.70 1.50
-      vertex 3.70 3.70 1.50
-      vertex 3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 3.70 -3.70 1.50
-      vertex 3.70 3.70 2.10
-      vertex 3.70 -3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 1.0 0.0
-    outer loop
-      vertex 3.70 3.70 1.50
-      vertex -3.70 3.70 1.50
-      vertex -3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 1.0 -0.0
-    outer loop
-      vertex 3.70 3.70 1.50
-      vertex -3.70 3.70 2.10
-      vertex 3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -3.70 3.70 1.50
-      vertex -3.70 -3.70 1.50
-      vertex -3.70 -3.70 2.10
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -3.70 3.70 1.50
-      vertex -3.70 -3.70 2.10
-      vertex -3.70 3.70 2.10
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -2.45 -2.45 3.00
-      vertex -2.45 2.45 3.00
-      vertex 2.45 2.45 3.00
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -2.45 -2.45 3.00
-      vertex 2.45 2.45 3.00
-      vertex 2.45 -2.45 3.00
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -2.45 -2.45 3.60
-      vertex 2.45 -2.45 3.60
-      vertex 2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -2.45 -2.45 3.60
-      vertex 2.45 2.45 3.60
-      vertex -2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -2.45 -2.45 3.00
-      vertex 2.45 -2.45 3.00
-      vertex 2.45 -2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -2.45 -2.45 3.00
-      vertex 2.45 -2.45 3.60
-      vertex -2.45 -2.45 3.60
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 2.45 -2.45 3.00
-      vertex 2.45 2.45 3.00
-      vertex 2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 2.45 -2.45 3.00
-      vertex 2.45 2.45 3.60
-      vertex 2.45 -2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 1.0 0.0
-    outer loop
-      vertex 2.45 2.45 3.00
-      vertex -2.45 2.45 3.00
-      vertex -2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 1.0 -0.0
-    outer loop
-      vertex 2.45 2.45 3.00
-      vertex -2.45 2.45 3.60
-      vertex 2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -2.45 2.45 3.00
-      vertex -2.45 -2.45 3.00
-      vertex -2.45 -2.45 3.60
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -2.45 2.45 3.00
-      vertex -2.45 -2.45 3.60
-      vertex -2.45 2.45 3.60
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -1.30 -1.30 4.50
-      vertex -1.30 1.30 4.50
-      vertex 1.30 1.30 4.50
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex -1.30 -1.30 4.50
-      vertex 1.30 1.30 4.50
-      vertex 1.30 -1.30 4.50
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -1.30 -1.30 5.10
-      vertex 1.30 -1.30 5.10
-      vertex 1.30 1.30 5.10
-    endloop
-  endfacet
-  facet normal 0.0 0.0 1.0
-    outer loop
-      vertex -1.30 -1.30 5.10
-      vertex 1.30 1.30 5.10
-      vertex -1.30 1.30 5.10
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -1.30 -1.30 4.50
-      vertex 1.30 -1.30 4.50
-      vertex 1.30 -1.30 5.10
-    endloop
-  endfacet
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex -1.30 -1.30 4.50
-      vertex 1.30 -1.30 5.10
-      vertex -1.30 -1.30 5.10
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 1.30 -1.30 4.50
-      vertex 1.30 1.30 4.50
-      vertex 1.30 1.30 5.10
-    endloop
-  endfacet
-  facet normal 1.0 0.0 0.0
-    outer loop
-      vertex 1.30 -1.30 4.50
-      vertex 1.30 1.30 5.10
-      vertex 1.30 -1.30 5.10
-    endloop
-  endfacet
-  facet normal 0.0 1.0 0.0
-    outer loop
-      vertex 1.30 1.30 4.50
-      vertex -1.30 1.30 4.50
-      vertex -1.30 1.30 5.10
-    endloop
-  endfacet
-  facet normal 0.0 1.0 -0.0
-    outer loop
-      vertex 1.30 1.30 4.50
-      vertex -1.30 1.30 5.10
-      vertex 1.30 1.30 5.10
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -1.30 1.30 4.50
-      vertex -1.30 -1.30 4.50
-      vertex -1.30 -1.30 5.10
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex -1.30 1.30 4.50
-      vertex -1.30 -1.30 5.10
-      vertex -1.30 1.30 5.10
-    endloop
-  endfacet
-endsolid retrieval_funnel
-```
-
-And the control flow around it, including the retry path:
+Every query is rewritten, checked for scope, and retrieved with BM25 and FAISS together. Results are fused, deduplicated and reranked, and the agent judges whether the context is good enough. If it is not, it plans retrieval again instead of answering.
 
 ```mermaid
 flowchart LR
@@ -463,14 +116,14 @@ timeline
     2026 : Agentic RAG system, Jan : Claude Code in Action, Feb : Associate Software Engineer at CGI, Sep : Vantage platform, Sep
 ```
 
-**Associate Software Engineer** &nbsp;·&nbsp; CGI, Bengaluru &nbsp;·&nbsp; *Sep 2026 – Present*
+**Associate Software Engineer** &nbsp;·&nbsp; CGI &nbsp;·&nbsp; *Sep 2026 – Present*
 
 - Build code-analysis pipelines that use Tree-sitter parsing to generate UIRs and give agent tools structured code context, cutting token consumption by about 40%.
 - Improve a Legacy Modernisation solution by refining application workflows, fixing functional issues, and raising execution reliability.
 - Analyse product requirements, find gaps across pages, APIs, and workflows, and drive their implementation to support customer leads.
 - Lead testing and deployment validation in customer environments: defect coordination, functional testing, client demonstrations, and release-readiness recommendations.
 
-**Apprentice AI Developer** &nbsp;·&nbsp; CGI, Bengaluru &nbsp;·&nbsp; *Sep 2025 – Aug 2026*
+**Apprentice AI Developer** &nbsp;·&nbsp; CGI &nbsp;·&nbsp; *Sep 2025 – Aug 2026*
 
 - Built a modular enterprise Agentic RAG platform (LangGraph, ChromaDB, tool-calling agents) with ReAct workflows, self-evaluation, and retry across 5+ production use cases.
 - Designed hybrid retrieval pipelines combining BM25, FAISS, and reranking, improving retrieval quality by 40% over baseline.
@@ -554,7 +207,7 @@ timeline
 
 | | |
 |---|---|
-| **B.Tech, Computer Science (Artificial Intelligence)** | KKR & KSR Institute of Technology and Sciences, Guntur · May 2025 |
+| **B.Tech, Computer Science (Artificial Intelligence)** | KKR & KSR Institute of Technology and Sciences · May 2025 |
 | **Oracle Cloud Infrastructure 2025 Generative AI Professional** (1Z0-1127-25) | Oracle University · Oct 2025 |
 | **Claude Code in Action** | Anthropic · Feb 2026 |
 
@@ -569,17 +222,8 @@ If you are working on LLM systems, RAG, or evaluation, I would like to hear abou
   <a href="mailto:athotanarendranath@gmail.com"><img src="https://img.shields.io/badge/Email_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"/></a>
 </p>
 
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": { "title": "Bengaluru, India", "marker-color": "#0f766e" },
-      "geometry": { "type": "Point", "coordinates": [77.5946, 12.9716] }
-    }
-  ]
-}
-```
-
 <sub>Where it started: <a href="https://github.com/narendranath0077/NEXUS---Voice-Based-AI-Assistant">NEXUS</a>, a Python voice assistant built to see if I could make something that talks back.</sub>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0f4f4a,100:0d1117&height=110&section=footer" alt="" width="100%"/>
+</p>
